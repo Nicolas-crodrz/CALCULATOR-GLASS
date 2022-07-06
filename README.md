@@ -1,7 +1,7 @@
 
 # **CALCULADORA V2**
 
-![CALCULADORA V1](img/Calulator-Glass.gif "Calculadora V1")
+![CALCULADORA V1](CALCULATOR-GLASS/img/Calulator-Glass.gif "Calculadora V1")
 
 Esta es la ***version 2*** de la calculadora, en este caso se ha utilizado mas ***javascript*** y se ha implementado con el ***framework vanilla.***
 
