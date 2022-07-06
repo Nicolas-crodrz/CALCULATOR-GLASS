@@ -1,0 +1,100 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body{
+    align-items: center;
+    background: #091921;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+body::before{
+    background:linear-gradient(#ff0000, #ffc107);
+    clip-path: circle(50% at 50% 50%);
+    content: '';
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+.container{
+    backdrop-filter: blur(15px);
+    background: rgba(255,255,255,0.05);
+    border-left: 1px solid rgba(255,255,255,0.2);
+    border-radius: 6px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+  }
+
+.container .calculator{
+    display: grid;
+    position: relative;
+  }
+
+.container .calculator .value{
+    background: transparent;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    border-right: 1px solid rgba(255,255,255,0.05);
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    grid-column: span 4;
+    height: 140px;
+    outline: none;
+    padding: 10px;
+    text-align: right;
+    width: 300px;
+  }
+
+.container .calculator span{
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      border-right: 1px solid rgba(255,255,255,0.05);
+      color:#fff;
+      cursor: pointer;
+      display: grid;
+      font-size: 20px;
+      font-weight: 400;
+      height: 75px;
+      place-items: center;
+      user-select: none;
+      width: 75px;
+    }
+
+.container .calculator span:hover{
+    background: rgba(255,255,255,0.05);
+    transition: 0s;
+  }
+
+.container .calculator span:active{
+    background: #fff;
+    color: #192f00;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+.container .calculator .clear{
+      background: rgba(255,255,255,0.05);
+      grid-column: span 2;
+      width: 150px;
+    }
+
+.container .calculator .plus{
+      grid-row: span 2;
+      height: 150px;
+    }
+    
+.equal{
+    background: rgba(255,255,255,0.05);
+  }
